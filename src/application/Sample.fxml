@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="999.0" prefWidth="1458.0" style="-fx-background-color: #12073C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane fx:id="signuppane" layoutX="-74.0" layoutY="-53.0" prefHeight="888.0" prefWidth="1401.0" scaleX="0.9" scaleY="0.9">
+         <children>
+            <ImageView fitHeight="836.0" fitWidth="1318.0" layoutX="-2.0" layoutY="4.0">
+               <image>
+                 <!-- <Image url="@../../../Desktop/Group%2028.png" /> -->
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="278.0" layoutY="241.0" prefHeight="482.0" prefWidth="806.0" scaleX="0.8" scaleY="0.8" style="-fx-background-color: F53F6B; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="20.0" lineSpacing="5.0" prefHeight="101.0" prefWidth="230.0" style="-fx-font-family: Montserrat; -fx-font-size: 40; -fx-font-weight: bold;" text="Sign Up" textAlignment="CENTER" textFill="#fadfdf" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Mongolian Bait" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <VBox prefHeight="228.0" prefWidth="624.0">
+                     <children>
+                        <TextArea fx:id="txtName" prefHeight="58.0" prefWidth="600.0" promptText="Name" style="-fx-border-radius: 30; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextArea>
+                        <TextArea fx:id="txtUserName" layoutX="20.0" layoutY="20.0" prefHeight="58.0" prefWidth="600.0" promptText="Login" style="-fx-border-radius: 30; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextArea>
+                        <PasswordField fx:id="pswPassword" prefHeight="57.0" prefWidth="686.0" promptText="Password" style="-fx-background-color: #ffffff; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="login" mnemonicParsing="false" onAction="#loginpressed" prefHeight="57.0" prefWidth="348.0" style="-fx-background-radius: 10; -fx-background-color: #F5A13F; -fx-font-family: Montserrat; -fx-font-weight: bold;" text="Log In" textFill="#fadfdf">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="SignUpOK" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#SignUpOkHandle" prefHeight="58.0" prefWidth="335.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-background-color: #12073B;" text="Ok" textFill="#fadfdf">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </VBox>
+            <Label contentDisplay="CENTER" graphicTextGap="20.0" layoutX="451.0" layoutY="128.0" lineSpacing="5.0" prefHeight="88.0" prefWidth="442.0" style="-fx-font-family: Montserrat; -fx-font-size: 60; -fx-font-weight: bolder;" text="C A L E N D A R" textAlignment="CENTER" textFill="#fadfdf" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Mongolian Bait" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="loginpane" layoutX="-70.0" layoutY="-51.0" prefHeight="849.0" prefWidth="1313.0" scaleX="0.9" scaleY="0.9" visible="false">
+         <children>
+            <ImageView fitHeight="836.0" fitWidth="1318.0" layoutX="-1.0" layoutY="8.0">
+               <image>
+                  <!-- <Image url="@../../../Desktop/Group%2028.png" /> -->
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="278.0" layoutY="241.0" prefHeight="482.0" prefWidth="806.0" style="-fx-background-color: F53F6B; -fx-background-radius: 20;">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="20.0" lineSpacing="5.0" prefHeight="101.0" prefWidth="230.0" style="-fx-font-family: Montserrat; -fx-font-size: 40; -fx-font-weight: bold;" text="Log In" textAlignment="CENTER" textFill="#fadfdf" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Mongolian Bait" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <VBox prefHeight="228.0" prefWidth="624.0">
+                     <children>
+                        <TextArea fx:id="txtLoginUserName" layoutX="20.0" layoutY="20.0" prefHeight="58.0" prefWidth="600.0" promptText="Login" style="-fx-border-radius: 30; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextArea>
+                        <PasswordField fx:id="pswLoginPassword" prefHeight="57.0" prefWidth="600.0" promptText="Password" style="-fx-background-color: #ffffff; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="signup" mnemonicParsing="false" onAction="#signuppressed" prefHeight="57.0" prefWidth="348.0" style="-fx-background-radius: 10; -fx-background-color: #F5A13F; -fx-font-family: Montserrat; -fx-font-weight: bold;" text="Sign Up" textFill="#fadfdf">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="LogInOk" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#LogInOkHandle" prefHeight="58.0" prefWidth="335.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-background-color: #12073B;" text="Ok" textFill="#fadfdf">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </VBox>
+            <Label contentDisplay="CENTER" graphicTextGap="20.0" layoutX="460.0" layoutY="135.0" lineSpacing="5.0" prefHeight="88.0" prefWidth="442.0" style="-fx-font-family: Montserrat; -fx-font-size: 60; -fx-font-weight: bolder;" text="C A L E N D A R" textAlignment="CENTER" textFill="#fadfdf" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Mongolian Bait" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <DialogPane fx:id="alert" layoutX="348.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="222.0" prefWidth="508.0" visible="false">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="72.0" prefWidth="480.0">
+               <children>
+                  <Button fx:id="okalert" layoutX="66.0" layoutY="45.0" mnemonicParsing="false" onAction="#alertpressed" prefHeight="37.0" prefWidth="348.0" style="-fx-background-radius: 10; -fx-background-color: #F5A13F; -fx-font-family: Montserrat; -fx-font-weight: bold;" text="ok" textFill="#fadfdf">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" graphicTextGap="16.0" layoutX="8.0" lineSpacing="5.0" prefHeight="40.0" prefWidth="480.0" style="-fx-font-family: Montserrat; -fx-font-size: 16; -fx-font-weight: bold;" text="Invalid username or password. Please try again!" textAlignment="CENTER" textFill="#f53f6b" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Mongolian Bait" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+          </content>
+          <expandableContent>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </expandableContent>
+         <header>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" lineSpacing="5.0" prefHeight="71.0" prefWidth="480.0" style="-fx-font-family: Montserrat; -fx-font-size: 40; -fx-font-weight: bold;" text="Alert" textAlignment="CENTER" textFill="#d0335a" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Mongolian Bait" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </header>
+      </DialogPane>
+      <Pane fx:id="monthly" layoutX="-77.0" layoutY="-70.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1225.0" prefWidth="1458.0" scaleX="0.9" scaleY="0.9" style="-fx-background-color: #12073C;" visible="false" AnchorPane.bottomAnchor="-82.0" AnchorPane.leftAnchor="-77.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="-70.0">
+         <children>
+            <BorderPane layoutX="34.0" layoutY="49.0" prefHeight="764.0" prefWidth="1252.0">
+               <right>
+                  <VBox alignment="CENTER" prefHeight="709.0" prefWidth="906.0" style="-fx-background-color: #F53F6B; -fx-background-radius: 20;" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <children>
+                        <HBox prefHeight="45.0" prefWidth="806.0">
+                           <children>
+                              <Label fx:id="MonthLabel" prefHeight="73.0" prefWidth="343.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 50;" text="Month" textFill="#fadfdf">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Region prefHeight="40.0" prefWidth="338.0">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Region>
+                              <Label fx:id="YearLabel" alignment="CENTER" prefHeight="73.0" prefWidth="120.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 50;" text="Year" textFill="#fadfdf" />
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="72.0" prefWidth="799.0" style="-fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="806.0" layoutY="-2.0">
+                                 <image>
+                                    <!-- <Image url="@../../../Desktop/Frame%201.png" /> -->
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <GridPane prefHeight="465.0" prefWidth="801.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="10.0" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="10.0" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="10.0" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="10.0" prefWidth="115.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="10.0" prefWidth="115.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="10.0" prefWidth="115.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="59.111114501953125" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="62.333343505859375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="64.6666259765625" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="64.3333740234375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="67.66668701171875" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="77.77777099609375" minHeight="10.0" prefHeight="61.33331298828125" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="113.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Monday" textAlignment="CENTER" textFill="#fadfdf" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="122.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Wednesday" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="2" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="100.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Thursday" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="113.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Tuesday" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="113.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Friday" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="4" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="113.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Saturday" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="5" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="113.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="Sunday" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="6" />
+                              <Button fx:id="Button1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton1" prefHeight="75.0" prefWidth="117.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="Button2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton2" prefHeight="75.0" prefWidth="122.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#650019" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton3" prefHeight="75.0" prefWidth="122.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton4" prefHeight="75.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton5" prefHeight="75.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton6" prefHeight="75.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#ff0040" />
+                                          <Stop color="WHITE" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Button>
+                              <Button fx:id="Button7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton7" prefHeight="75.0" prefWidth="121.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton8" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button9" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton9" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button10" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton10" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button11" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton11" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button12" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton12" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button13" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton13" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button14" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton14" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button15" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton15" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button16" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton16" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button17" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton17" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button18" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton18" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button19" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton19" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button20" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton20" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button21" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton21" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button22" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton22" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button23" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton23" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button24" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton24" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button25" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton25" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button26" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton26" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#540404" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button27" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton27" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button28" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton28" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button29" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton29" prefHeight="63.0" prefWidth="111.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button30" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton30" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button31" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton31" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button32" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton32" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button33" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton33" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button34" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton34" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button35" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton35" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button36" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton36" prefHeight="63.0" prefWidth="111.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button37" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton37" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button38" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton38" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button39" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton39" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button40" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton40" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button41" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton41" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button fx:id="Button42" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#HandleButton42" prefHeight="84.0" prefWidth="116.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 40; -fx-background-color: #fadfdf; -fx-text-fill: #5A5A5A;" textFill="#f53f6b" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </right>
+               <left>
+                  <VBox prefHeight="702.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="247.0" prefWidth="332.0" style="-fx-background-color: #F53F6B; -fx-background-radius: 15;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 25;" text="Plans/Checklist" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ScrollPane prefHeight="193.0" prefWidth="288.0" style="-fx-background-color: #F53F6B;">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="305.0" prefWidth="305.0" style="-fx-background-color: #F53F6B;">
+                                       <children>
+                                          <VBox prefHeight="277.0" prefWidth="312.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan1" prefHeight="26.0" prefWidth="257.0" promptText="Plan 1">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan2" prefHeight="26.0" prefWidth="258.0" promptText="Plan 2">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan3" prefHeight="26.0" prefWidth="257.0" promptText="Plan 3">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan4" prefHeight="26.0" prefWidth="257.0" promptText="Plan 4">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan5" prefHeight="26.0" prefWidth="257.0" promptText="Plan 5">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan6" prefHeight="26.0" prefWidth="257.0" promptText="Plan 6">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan7" prefHeight="26.0" prefWidth="257.0" promptText="Plan 7">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="323.0">
+                                                   <children>
+                                                      <TextField fx:id="Plan8" prefHeight="26.0" prefWidth="257.0" promptText="Plan 8">
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" right="15.0" />
+                                                         </HBox.margin></TextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </ScrollPane>
+                              <HBox prefHeight="135.0" prefWidth="332.0">
+                                 <children>
+                                    <Button fx:id="PlanAdd" mnemonicParsing="false" onAction="#PlanAddClicked" prefHeight="47.0" prefWidth="284.0" style="-fx-background-radius: 5; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 10; -fx-background-color: #28E2B6; -fx-font-weight: bold;" text="Add" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="53.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="332.0" style="-fx-background-color: #3FBEF5; -fx-background-radius: 15;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 25;" text="Notes" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="NotesField" prefHeight="111.0" prefWidth="322.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                              <HBox prefHeight="62.0" prefWidth="332.0">
+                                 <children>
+                                    <Button fx:id="NoteAdd" mnemonicParsing="false" onAction="#NoteAddClicked" prefHeight="33.0" prefWidth="282.0" style="-fx-background-radius: 5; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 10; -fx-background-color: #28E2B6; -fx-font-weight: bold;" text="Add" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="53.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="194.0" prefWidth="332.0" style="-fx-background-color: #F5A13F; -fx-background-radius: 15;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 25;" text="Daily Routine" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <VBox prefHeight="170.0" prefWidth="332.0">
+                                 <children>
+                                    <CheckBox fx:id="ChDaily1" mnemonicParsing="false" text="Drink Water" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="20.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets right="2.0" top="2.0" />
+                                       </padding>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ChDaily2" mnemonicParsing="false" text="Morning Exercise" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="20.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets right="2.0" top="2.0" />
+                                       </padding>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ChDaily3" mnemonicParsing="false" text="Read 10 pages of any book" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="20.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets right="2.0" top="2.0" />
+                                       </padding>
+                                    </CheckBox>
+                                    <CheckBox fx:id="ChDaily4" mnemonicParsing="false" text="Eat fruits" textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets bottom="2.0" left="20.0" right="2.0" top="2.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets right="2.0" top="2.0" />
+                                       </padding>
+                                    </CheckBox>
+                                    <Button fx:id="DailyAdd" mnemonicParsing="false" onAction="#DailyAddClicked" prefHeight="33.0" prefWidth="282.0" style="-fx-background-radius: 5; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 10; -fx-background-color: #28E2B6; -fx-font-weight: bold;" text="Add" textFill="WHITE">
+                                       <font>
+                                          <Font size="53.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" right="5.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </left>
+               <top>
+                  <HBox prefHeight="79.0" prefWidth="1278.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="yearlybtn" mnemonicParsing="false" onAction="#yearlyclicked" prefHeight="54.0" prefWidth="337.0" style="-fx-background-radius: 15; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 27; -fx-background-color: #3FBEF5; -fx-text-fill: #fadfdf;" text="Yearly mode" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </Button>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="907.0" style="-fx-background-color: #F53F6B; -fx-background-radius: 15;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 30;" text="Enter the date:" textFill="#fadfdf">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="day" alignment="CENTER" prefHeight="36.0" prefWidth="102.0" promptText="Day" style="-fx-background-radius: 10; -fx-background-color: #fadfdf; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="month" alignment="CENTER" layoutX="270.0" layoutY="15.0" prefHeight="36.0" prefWidth="102.0" promptText="Month" style="-fx-background-radius: 10; -fx-background-color: #fadfdf; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="year" alignment="CENTER" layoutX="382.0" layoutY="15.0" prefHeight="36.0" prefWidth="102.0" promptText="Year" style="-fx-background-radius: 10; -fx-background-color: #fadfdf; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="gotodate" mnemonicParsing="false" onAction="#monthgoclicked" prefHeight="34.0" prefWidth="219.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 15; -fx-background-color: #3FBEF5;" text="Go" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <DialogPane fx:id="addplan" layoutX="32.0" layoutY="120.0" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="341.0" style="-fx-background-radius: 10; -fx-background-color: #FADFDF;" visible="false">
+               <content>
+                  <BorderPane prefHeight="115.0" prefWidth="341.0">
+                     <bottom>
+                        <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="341.0" style="-fx-background-radius: 5; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 10; -fx-background-color: #28E2B6; -fx-font-weight: bold;" text="Add" textFill="WHITE" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="53.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </BorderPane.margin>
+                        </Button>
+                     </bottom>
+                     <center>
+                        <TextField prefHeight="42.0" prefWidth="341.0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </BorderPane.margin>
+                        </TextField>
+                     </center>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: 500; -fx-font-size: 25;" text="Add Plan for today" textFill="#12073b" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                  </BorderPane>
+               </content>
+            </DialogPane>
+            <DialogPane fx:id="deleteplan" layoutX="30.0" layoutY="100.0" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="341.0" style="-fx-background-radius: 10; -fx-background-color: #FADFDF;" visible="false">
+               <content>
+                  <BorderPane prefHeight="115.0" prefWidth="341.0">
+                     <bottom>
+                        <Button fx:id="CurrentPlanDelete" mnemonicParsing="false" onAction="#CurrentPLanDeleteClicked" prefHeight="42.0" prefWidth="341.0" style="-fx-background-radius: 5; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 10; -fx-background-color: #28E2B6; -fx-font-weight: bold;" text="Delete" textFill="WHITE" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="53.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </BorderPane.margin>
+                        </Button>
+                     </bottom>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: 500; -fx-font-size: 25;" text="Delete plan" textFill="#12073b" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="CheckBox" />
+                              <CheckBox mnemonicParsing="false" text="CheckBox" />
+                              <CheckBox mnemonicParsing="false" text="CheckBox" />
+                              <CheckBox mnemonicParsing="false" text="CheckBox" />
+                              <CheckBox mnemonicParsing="false" text="CheckBox" />
+                              <CheckBox mnemonicParsing="false" text="CheckBox" />
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </content>
+            </DialogPane>
+         </children>
+      </Pane>
+      <Pane fx:id="yearly" layoutX="-76.0" layoutY="-94.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="1167.0" prefWidth="1498.0" scaleX="0.9" scaleY="0.9" style="-fx-background-color: #12073C;" visible="false">
+         <children>
+            <BorderPane layoutX="34.0" layoutY="49.0" prefHeight="746.0" prefWidth="1252.0">
+               <right>
+                  <VBox alignment="CENTER" prefHeight="710.0" prefWidth="899.0" style="-fx-background-color: #F53F6B; -fx-background-radius: 20;" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="20.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Region prefHeight="73.0" prefWidth="345.0" style="-fx-background-image: C:\18286ead14b96a808ffc32534351e1ab.jpg;">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Region>
+                              <Label alignment="CENTER" prefHeight="73.0" prefWidth="120.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 50;" text="Year" textFill="#fadfdf" />
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="72.0" prefWidth="799.0" style="-fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="806.0" layoutY="3.0">
+                                 <image>
+                                    <!-- <Image url="@../../../Desktop/Frame%201.png" /> -->
+                                 </image>
+                              </ImageView>
+                              <Region layoutX="247.0" layoutY="-22.0" prefHeight="109.0" prefWidth="200.0" />
+                           </children>
+                        </AnchorPane>
+                        <GridPane prefHeight="447.0" prefWidth="806.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextArea fx:id="jan" prefHeight="200.0" prefWidth="200.0">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="apr" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="jul" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="oct" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="feb" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="may" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="aug" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="nov" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="mar" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="jun" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="sep" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <TextArea fx:id="dec" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </right>
+               <left>
+                  <VBox prefHeight="702.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="673.0" prefWidth="332.0" style="-fx-background-color: FFB35A; -fx-background-radius: 15;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 25;" text="Holidays" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <VBox prefHeight="583.0" prefWidth="332.0">
+                                 <children>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="244.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="88.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="245.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Independence Day" textAlignment="CENTER" textFill="#fadfdf" />
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="246.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Teachers' Day" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="1" />
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="245.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="National Language" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="2" />
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="245.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="National Flag" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="3" />
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="248.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Constitution Day" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="4" />
+                                          <Label alignment="CENTER" prefHeight="27.0" prefWidth="247.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="New Year" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="5" />
+                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="247.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Defenders day" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="6" />
+                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="250.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Women's Day" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="7" />
+                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="245.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Navruz" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="8" />
+                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="263.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Memory Day" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="9" />
+                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="243.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Nadira's Birthday" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="10" />
+                                          <Label alignment="CENTER" prefHeight="28.0" prefWidth="245.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 16;" text="Childrens Day" textAlignment="CENTER" textFill="#fadfdf" GridPane.rowIndex="11" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="01/09" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="01/10" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="21/10" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="18/11" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="08/12" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="31/12" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="14/01" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="08/03" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="21/03" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="09/05" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="27/05" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                          <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="157.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 20;" text="01/06" textAlignment="CENTER" textFill="#fadfdf" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="68.0" prefWidth="332.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </left>
+               <top>
+                  <HBox prefHeight="79.0" prefWidth="1278.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="monthlybtn" mnemonicParsing="false" onAction="#monthlyclicked" prefHeight="54.0" prefWidth="337.0" style="-fx-background-radius: 15; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 27; -fx-background-color: #3FBEF5; -fx-text-fill: #fadfdf;" text="Monthly mode" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </Button>
+                        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="907.0" style="-fx-background-color: #F53F6B; -fx-background-radius: 15;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="235.0" style="-fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 30;" text="Enter the year:" textFill="#fadfdf">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="yearlyyear" alignment="CENTER" layoutX="382.0" layoutY="15.0" prefHeight="34.0" prefWidth="398.0" promptText="Year" style="-fx-background-radius: 10; -fx-background-color: #fadfdf; -fx-font-family: Montserrat; -fx-font-weight: bold;">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="gotoyear" mnemonicParsing="false" onAction="#yearsearchclicked" prefHeight="34.0" prefWidth="219.0" style="-fx-background-radius: 10; -fx-font-family: Montserrat; -fx-font-weight: bold; -fx-font-size: 15; -fx-background-color: #3FBEF5;" text="Go" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
