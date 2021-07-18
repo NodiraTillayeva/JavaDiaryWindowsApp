@@ -8,5 +8,3 @@ Project includes:
 - Daily Reminders
 - Database to save notes
 - Checklists and etc
-
-You can find program screenshots in the Screens folder!
